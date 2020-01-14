@@ -33,6 +33,16 @@ export class HomeComponent implements OnInit {
     this.teamBScore = this.team2[this.category];
   }
 
+  clear(team) {
+    if (team == 1) {
+      this.teamAScore = 0;
+      this.team1[this.category] = 0;
+    } else {
+      this.team2[this.category] = 0;
+      this.teamBScore = 0;
+    }
+  }
+
   add5(team) {
     if (team == 1) {
       this.team1[this.category] += 5;
