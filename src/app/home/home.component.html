@@ -41,7 +41,7 @@
                     <td>{{team2['science']}}</td>
                 </tr>
                 <tr>
-                    <td>History</td>
+                    <td>Social Studies</td>
                     <td>{{team1['history']}}</td>
                     <td>{{team2['history']}}</td>
                 </tr>
@@ -104,7 +104,7 @@
                 <li [class.uk-active]="category == 'english'"><a (click)="switchCategory('english')">English</a></li>
                 <li [class.uk-active]="category == 'math'"><a (click)="switchCategory('math')">Math</a></li>
                 <li [class.uk-active]="category == 'science'"><a (click)="switchCategory('science')">Science</a></li>
-                <li [class.uk-active]="category == 'history'"><a (click)="switchCategory('history')">History</a></li>
+                <li [class.uk-active]="category == 'history'"><a (click)="switchCategory('history')">Social Studies</a></li>
                 <li [class.uk-active]="category == 'scoreboard'" *ngIf="team1.name.length > 0 && team2.name.length > 0"><a (click)="switchCategory('scoreboard')">Scoreboard</a></li>
             </ul>
         </div>

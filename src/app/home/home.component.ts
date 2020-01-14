@@ -68,6 +68,8 @@ export class HomeComponent implements OnInit {
   showCategory() {
     if (this.category === 'all-around') {
       return 'All Around';
+    } else if (this.category === 'history') {
+      return 'Social Studies';
     } else {
       return this.capitalize(this.category);
     }
