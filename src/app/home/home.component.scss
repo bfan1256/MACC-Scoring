@@ -1,0 +1,61 @@
+.main {
+    margin-top: 2%;
+}
+
+.label-team {
+    float: left;
+}
+
+.score {
+    font-size: 4.0rem;
+}
+
+.category {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.label-scoreboard {
+    margin-right: 5px;
+}
+
+.uk-input {
+    text-align: center;
+}
+
+.score-options {
+    .option {
+        width: 100%;
+    }
+}
+
+.top {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    .uk-card {
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+    }
+}
+
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    .uk-card {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .uk-tab-bottom {
+        text-align: center;
+    }
+}
+
+.logo {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+}
