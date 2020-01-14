@@ -1,6 +1,11 @@
 .main {
     margin-top: 2%;
-    margin-bottom: 5%;
+}
+
+@media screen and (max-width: 700px) {
+    .main {
+        padding-bottom: 125px;
+    }
 }
 
 .label-team {
