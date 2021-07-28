@@ -10,45 +10,6 @@
     <h1>{{ showCategory() }}</h1>
 </div>
 <div class="uk-container main">
-    <div *ngIf="category === 'scoreboard'">
-        <table class="uk-table uk-table-small uk-table-divider">
-            <thead>
-                <tr>
-                    <th>Category</th>
-                    <th>{{team1.name}}</th>
-                    <th>{{team2.name}}</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>All Around</td>
-                    <td>{{team1['all-around']}}</td>
-                    <td>{{team2['all-around']}}</td>
-                </tr>
-                <tr>
-                    <td>English</td>
-                    <td>{{team1['english']}}</td>
-                    <td>{{team2['english']}}</td>
-                </tr>
-                <tr>
-                    <td>Math</td>
-                    <td>{{team1['math']}}</td>
-                    <td>{{team2['math']}}</td>
-                </tr>
-                <tr>
-                    <td>Science</td>
-                    <td>{{team1['science']}}</td>
-                    <td>{{team2['science']}}</td>
-                </tr>
-                <tr>
-                    <td>Social Studies</td>
-                    <td>{{team1['history']}}</td>
-                    <td>{{team2['history']}}</td>
-                </tr>
-                
-            </tbody>
-        </table>
-    </div>
     <div class="uk-child-width-expand@s uk-text-center" uk-grid *ngIf="category !== 'scoreboard'">
         <div>
             <div class="uk-card uk-card-default uk-card-body uk-animation-fade">
@@ -66,7 +27,7 @@
                     <div>
                         <button class="option uk-button uk-button-secondary" (click)="minus2(1)">Minus 2</button>
                     </div>
-                    
+
                 </div>
                 <div>
                     <button class="clear option uk-button uk-button-danger" (click)="clear(1)">Clear Score</button>
@@ -76,7 +37,7 @@
         <div>
             <div class="uk-card uk-card-default uk-card-body uk-animation-fade">
                 <span class="uk-label label-team uk-label-success">Team B</span>
-                
+
                 <h1 class="score"><input type="number" class="uk-input" [(ngModel)]="teamBScore"></h1>
                 <h3 class="uk-card-title">
                     <input type="text" class="uk-input" [(ngModel)]="team2.name" placeholder="Team B Name">
